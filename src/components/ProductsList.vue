@@ -31,7 +31,7 @@ onBeforeMount(async () => {
                             </div>
                             <h5 class="card-title">{{ item.title }}</h5>
                             <p class="card-text">{{ item.description.split(' ').slice(1, 10).join(' ') }}..</p>
-                            <div class="text-center my-4"> <a href="#" class="btn btn-warning">Check offer</a> </div>
+                            <div class="text-center my-4"> <RouterLink :to="{name: 'product', params: {id: item.id}}" class="btn btn-warning">Check offer</RouterLink> </div>
                             <div class="clearfix mb-1"> 
                                 <span class="float-start">
                                     <i class="far fa-question-circle"></i>
